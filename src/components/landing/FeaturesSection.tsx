@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Wifi, WifiOff, CalendarDays, FolderOpen, BarChart3, Shield, Smartphone } from "lucide-react";
+import { WifiOff, CalendarDays, FolderOpen, BarChart3, Shield, Smartphone } from "lucide-react";
 
 const features = [
   {
@@ -56,7 +56,7 @@ const FeaturesSection = () => {
         >
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">ফিচারস</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-4">
-            যা যা আছে <span className="text-gradient">হিসাব</span> অ্যাপে
+            যা যা আছে <span className="text-gradient">Expense Tracker</span> অ্যাপে
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             আপনার দৈনন্দিন খরচ ম্যানেজমেন্টকে সহজ ও স্মার্ট করতে আমাদের সব ফিচার।

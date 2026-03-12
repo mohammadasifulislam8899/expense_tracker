@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-gradient mb-3">💰 হিসাব</h3>
+            <h3 className="text-xl font-bold text-gradient mb-3">💰 Expense Tracker</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              বাংলাদেশের মানুষের জন্য তৈরি সবচেয়ে সহজ ও কার্যকর খরচ ট্র্যাকার অ্যাপ।
+              সবচেয়ে সহজ ও কার্যকর খরচ ট্র্যাকার অ্যাপ।
             </p>
           </div>
 
@@ -25,18 +25,18 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3">যোগাযোগ</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>📧 support@hishab.app</li>
-              <li>📱 +880 1XXX-XXXXXX</li>
-              <li>📍 ঢাকা, বাংলাদেশ</li>
+              <li>👨‍💻 Mohammad Asiful Islam</li>
+              <li>🏢 Droidnest Studio</li>
+              <li>📍 বাংলাদেশ</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-border mt-10 pt-6 text-center text-sm text-muted-foreground">
           <p className="flex items-center justify-center gap-1">
-            তৈরি করেছে <Heart className="w-4 h-4 text-destructive fill-destructive" /> দিয়ে — বাংলাদেশ থেকে
+            তৈরি করেছে <Heart className="w-4 h-4 text-destructive fill-destructive" /> দিয়ে — Droidnest Studio
           </p>
-          <p className="mt-1">© {new Date().getFullYear()} হিসাব। সর্বস্বত্ব সংরক্ষিত।</p>
+          <p className="mt-1">© {new Date().getFullYear()} Expense Tracker। সর্বস্বত্ব সংরক্ষিত।</p>
         </div>
       </div>
     </footer>

@@ -1,14 +1,10 @@
 import { motion } from "framer-motion";
-import screenshotDashboard from "@/assets/screenshot-dashboard.png";
-import screenshotAddExpense from "@/assets/screenshot-add-expense.png";
-import screenshotAnalytics from "@/assets/screenshot-analytics.png";
-import screenshotHistory from "@/assets/screenshot-history.png";
 
 const screenshots = [
-  { src: screenshotDashboard, label: "ড্যাশবোর্ড" },
-  { src: screenshotAddExpense, label: "খরচ যোগ" },
-  { src: screenshotAnalytics, label: "অ্যানালিটিক্স" },
-  { src: screenshotHistory, label: "খরচের ইতিহাস" },
+  { src: "https://github.com/mohammadasifulislam8899/expense_tracker/blob/main/images/Screenshot_20260312_214910.png?raw=true", label: "ড্যাশবোর্ড" },
+  { src: "https://raw.githubusercontent.com/mohammadasifulislam8899/expense_tracker/refs/heads/main/images/Screenshot_20260312_214852.png", label: "খরচ যোগ" },
+  { src: "https://raw.githubusercontent.com/mohammadasifulislam8899/expense_tracker/refs/heads/main/images/Screenshot_20260312_214858.png", label: "অ্যানালিটিক্স" },
+  { src: "https://raw.githubusercontent.com/mohammadasifulislam8899/expense_tracker/refs/heads/main/images/Screenshot_20260312_214840.png", label: "খরচের ইতিহাস" },
 ];
 
 const ScreenshotsSection = () => {

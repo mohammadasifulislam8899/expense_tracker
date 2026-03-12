@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 
+const APK_URL = "https://github.com/mohammadasifulislam8899/expense_tracker/raw/refs/heads/main/app-release.apk";
+
 const DownloadSection = () => {
   return (
     <section id="download" className="py-24 bg-secondary/50">
@@ -11,7 +13,6 @@ const DownloadSection = () => {
           viewport={{ once: true }}
           className="bg-hero-gradient rounded-3xl p-10 md:p-16 text-primary-foreground text-center relative overflow-hidden"
         >
-          {/* Decorative circles */}
           <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-primary-foreground/5" />
           <div className="absolute -bottom-10 -left-10 w-40 h-40 rounded-full bg-primary-foreground/5" />
 
@@ -20,21 +21,21 @@ const DownloadSection = () => {
               আজই শুরু করুন আপনার খরচ ট্র্যাকিং
             </h2>
             <p className="opacity-90 max-w-xl mx-auto mb-8 leading-relaxed">
-              হিসাব অ্যাপ ডাউনলোড করুন এবং আপনার আর্থিক জীবনকে সুশৃঙ্খল করুন। সম্পূর্ণ ফ্রি, কোনো রেজিস্ট্রেশন লাগবে না।
+              Expense Tracker অ্যাপ ডাউনলোড করুন এবং আপনার আর্থিক জীবনকে সুশৃঙ্খল করুন। সম্পূর্ণ ফ্রি, কোনো রেজিস্ট্রেশন লাগবে না।
             </p>
 
             <a
-              href="https://play.google.com/store"
+              href={APK_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-foreground text-background px-8 py-4 rounded-full font-bold hover:opacity-90 transition-opacity shadow-lg"
             >
               <Download className="w-5 h-5" />
-              Google Play থেকে ডাউনলোড করুন
+              APK ডাউনলোড করুন
             </a>
 
             <p className="text-sm opacity-75 mt-6">
-              ✨ ১০,০০০+ মানুষ ইতোমধ্যে ব্যবহার করছে
+              ✨ Android ফোনে সরাসরি ইনস্টল করুন
             </p>
           </div>
         </motion.div>
