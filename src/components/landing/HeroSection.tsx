@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import screenshotDashboard from "@/assets/screenshot-dashboard.png";
+
+const HERO_SCREENSHOT = "https://github.com/mohammadasifulislam8899/expense_tracker/blob/main/images/Screenshot_20260312_214910.png?raw=true";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px] rounded-full bg-accent/10 blur-3xl" />
@@ -13,14 +13,13 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Text */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
             <span className="inline-block bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
-              🚀 বাংলাদেশের #১ খরচ ট্র্যাকার
+              🚀 সেরা খরচ ট্র্যাকার অ্যাপ
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               আপনার প্রতিটি{" "}
@@ -28,7 +27,7 @@ const HeroSection = () => {
               করুন সহজেই
             </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
-              দৈনিক খরচ রেকর্ড করুন, ক্যাটাগরি অনুযায়ী বিশ্লেষণ দেখুন এবং আপনার আর্থিক লক্ষ্য পূরণ করুন — সম্পূর্ণ বাংলায়।
+              দৈনিক খরচ রেকর্ড করুন, ক্যাটাগরি অনুযায়ী বিশ্লেষণ দেখুন এবং আপনার আর্থিক লক্ষ্য পূরণ করুন।
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -45,11 +44,10 @@ const HeroSection = () => {
               </a>
             </div>
             <p className="text-sm text-muted-foreground mt-6">
-              ✅ সম্পূর্ণ ফ্রি &nbsp;•&nbsp; ✅ অফলাইনে কাজ করে &nbsp;•&nbsp; ✅ বাংলা ইন্টারফেস
+              ✅ সম্পূর্ণ ফ্রি &nbsp;•&nbsp; ✅ অফলাইনে কাজ করে &nbsp;•&nbsp; ✅ সিম্পল ইন্টারফেস
             </p>
           </motion.div>
 
-          {/* Phone mockup */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -60,8 +58,8 @@ const HeroSection = () => {
               <div className="absolute inset-0 glow rounded-[2rem] scale-110" />
               <div className="phone-mockup w-[260px] md:w-[300px] animate-float">
                 <img
-                  src={screenshotDashboard}
-                  alt="হিসাব অ্যাপ ড্যাশবোর্ড"
+                  src={HERO_SCREENSHOT}
+                  alt="Expense Tracker অ্যাপ ড্যাশবোর্ড"
                   className="w-full"
                   loading="eager"
                 />
@@ -70,7 +68,6 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
